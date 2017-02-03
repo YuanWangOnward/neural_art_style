@@ -33,6 +33,7 @@ You will need to install dependencies:
 - matplotlib
 - pickle
 - PIL
+- lfs
 
 
 Then go through the [main.ipynb](./main.ipynb) step by step.
