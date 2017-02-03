@@ -1,12 +1,20 @@
 # Neural Algorithm of Artistic Style #
 
-This repository is a course project for EL6123 Image and Video Processing by professor Yao Wang at New York University. It implements and extends "[A Neural Algorithm of Artistic Style](http://arxiv.org/abs/1508.06576)".
+This repository holds a course project for EL-GY 6123 Image and Video Processing given by professor Yao Wang at New York University. 
+It implements and extends "[A Neural Algorithm of Artistic Style](http://arxiv.org/abs/1508.06576)".
 
-Its original version can be found at [https://github.com/log0/neural-style-painting](https://github.com/log0/neural-style-painting). You can do it through the IPython Notebook available [here](./TensorFlow%20Implementation%20of%20A%20Neural%20Algorithm%20of%20Artistic%20Style.ipynb)! This code is documented so you can follow along while reading with the paper. You can also just replace with your own images and to generate your new painting.
+Its original version can be found at [https://github.com/log0/neural-style-painting](https://github.com/log0/neural-style-painting). 
+You can do it through the IPython Notebook available [here](./TensorFlow%20Implementation%20of%20A%20Neural%20Algorithm%20of%20Artistic%20Style.ipynb)! 
+This code is documented so you can follow along while reading with the paper. 
+You can also just replace with your own images and to generate your new painting.
 
-Current version rewrites VGG-19 model from matlab-data-structure into python-data-structure so that loading the model is more easy and error-free.
+Current version rewrites VGG-19 model from .mat into .pkl so that loading and using the model is easier. 
+The .pkl VGG-19 model is included in the repository with lfs.
+The original .mat VGG-19 model can be downloaded at [VGG-19 model](http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat).
+It can then be rewrites into .pkl with vgg_helper.mat2pkl
 
-Example results from original implementation:
+
+Example results:
 
 <img src="images/Macau.jpg" width="400px" height="300px" />
 <img src="images/output-macau/4900 - final.png" width="400px" height="300px" />
@@ -22,10 +30,12 @@ You will need to install dependencies:
 - TensorFlow
 - Scipy
 - Numpy
+- pickle
+- PIL
+- matplotlib
 
-//You will need to download the [VGG-19 model](http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat).
 
-Then just run art.py.
+Then go through main.ipynb step by step.
 
 References:
 - [A Neural Algorithm of Artistic Style](http://arxiv.org/abs/1508.06576)

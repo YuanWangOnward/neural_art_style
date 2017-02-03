@@ -5,7 +5,7 @@ import numpy as np
 import pickle
 
 
-def mat2p(vgg_path='imagenet-vgg-verydeep-19.mat'):
+def mat2pkl(vgg_path='imagenet-vgg-verydeep-19.mat'):
     """
     used to transfer .mat vgg modle to .p
     for clear code and avoid potential error
