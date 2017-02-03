@@ -4,14 +4,14 @@ This repository holds a course project for EL-GY 6123 Image and Video Processing
 It implements and extends "[A Neural Algorithm of Artistic Style](http://arxiv.org/abs/1508.06576)".
 
 Its original version can be found at [https://github.com/log0/neural-style-painting](https://github.com/log0/neural-style-painting). 
-You can do it through the IPython Notebook available [here](./TensorFlow%20Implementation%20of%20A%20Neural%20Algorithm%20of%20Artistic%20Style.ipynb)! 
+You can do it through the IPython Notebook available [here](./main.ipynb)! 
 This code is documented so you can follow along while reading with the paper. 
 You can also just replace with your own images and to generate your new painting.
 
-Current version rewrites VGG-19 model from .mat into .pkl so that loading and using the model is easier. 
+Current version rewrites VGG-19 model from .mat into .pkl so that loading and using the model are easier. 
 The .pkl VGG-19 model is included in the repository with lfs.
 The original .mat VGG-19 model can be downloaded at [VGG-19 model](http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat).
-It can then be rewrites into .pkl with vgg_helper.mat2pkl
+It can then be rewritten into .pkl with vgg_helper.mat2pkl
 
 
 Example results:
@@ -30,12 +30,12 @@ You will need to install dependencies:
 - TensorFlow
 - Scipy
 - Numpy
+- matplotlib
 - pickle
 - PIL
-- matplotlib
 
 
-Then go through main.ipynb step by step.
+Then go through the [main.ipynb](./main.ipynb) step by step.
 
 References:
 - [A Neural Algorithm of Artistic Style](http://arxiv.org/abs/1508.06576)
