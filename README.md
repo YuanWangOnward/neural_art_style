@@ -13,7 +13,7 @@ The .pkl VGG-19 model is included in the repository with lfs.
 The original .mat VGG-19 model can be downloaded at [VGG-19 model](http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat).
 It can then be rewritten into .pkl with vgg_helper.mat2pkl
 
-Team members: Megan
+Team members: Megan, Yuan
 
 Example results:
 
