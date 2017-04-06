@@ -405,7 +405,7 @@ imshow(input_image[0])
 
 # In[21]:
 
-sess.run(tf.initialize_all_variables())
+sess.run(tf.global_variables_initializer())
 
 
 # In[22]:
@@ -443,7 +443,7 @@ train_step = optimizer.minimize(total_loss)
 
 # In[26]:
 
-sess.run(tf.initialize_all_variables())
+sess.run(tf.global_variables_initializer())
 sess.run(model['input'].assign(input_image))
 
 
@@ -459,7 +459,7 @@ ITERATIONS = 400  # The art.py uses 5000 iterations, and yields far more appeali
 
 # In[28]:
 
-sess.run(tf.initialize_all_variables())
+sess.run(tf.global_variables_initializer())
 sess.run(model['input'].assign(input_image))
 for it in range(ITERATIONS):
     sess.run(train_step)
