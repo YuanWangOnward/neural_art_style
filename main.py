@@ -337,22 +337,6 @@ def save_image(path, image):
 
 # If vgg model has not been formated into .p file, do the transform from .mat file
 
-# In[9]:
-
-os.path.isfile(VGG_MODEL_MAT)
-
-
-# In[10]:
-
-os.path.isfile(VGG_MODEL)
-
-
-# In[11]:
-
-# get_ipython().magic('pwd')
-
-
-# $E=Mc^2$
 
 # In[12]:
 
@@ -360,7 +344,7 @@ if not os.path.isfile(VGG_MODEL):
     if not os.path.isfile(VGG_MODEL_MAT):
         raise ValueError('No vgg model found, please download and add it to current directory.')
     else:
-        mat2p(VGG_MODEL_MAT)
+        mat2pkl(VGG_MODEL_MAT)
 else:
     print('vgg model found in .pkl format')
 
