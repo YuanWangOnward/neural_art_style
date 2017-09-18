@@ -1,19 +1,28 @@
 # Introduction
 <div style="text-align: justify; text-indent: 30px;">
-<p>
-It's a course project I advised.
-Two brilliant and passionated master students at NYU,
-Megan Hardy and Sumanto Pal,
-start their adventure of image processing and deep learning.
-Different objects of a painting typically have distinctively different
-styles i.e. textures and color compositions while previous neural
-painting works abstract a global style from a painting
-and apply it globally onto a photo.
-In this project, we separate objects of interest in both painting
-and real content photo and apply an art style only to the
-corresponding objects. For example, abstract style from a flower
-in a painting and apply it onto a flower in a real content photo.
-It creates unique aesthetic experiences.
+<p align="justify">
+    Researcher do a lot of literature survey, which is always a pain,
+    pain, in the sense that it is hard to get the 'big picture' of a field
+    facing the endless and messy papers. There should be auto tools allowing people
+    to find out the most influential works and
+    see how the studies of a field evolves along time.
+    However I cannot find myself a satisfactory one and I decided to make one myself.
+    The main functionality of this tool includes:
+    <ul>
+        <li >
+            Given a set of papers, visualize their relationship as a graph.
+            Graph nodes are papers and they are arranged chronologically.
+            Graph edges indicate citation relationship.
+        </li>
+        <li >
+            Features of each paper can be attached to the nodes.
+            Influential papers are highlighted.
+        </li>
+        <li >
+            Given a set of papers, the tool is able to find the most related
+            papers in terms of citation relationship. Namely, expand your paper pool.
+        </li>
+    </ul>
 </p>
 </div>
 
